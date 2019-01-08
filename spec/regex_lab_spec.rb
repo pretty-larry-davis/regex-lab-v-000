@@ -5,7 +5,7 @@ describe "Working with Regular expressions" do
     it "returns true for words starting with a vowel" do
       match = %w{ afoot Excellent incredible Absolute unreal Inconceivable octopus }
 
-      scan.each do |word|
+      match.each do |word|
         expect(starts_with_a_vowel?(word)).to be(true)
       end
     end
